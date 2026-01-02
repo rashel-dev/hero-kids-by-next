@@ -23,9 +23,7 @@ export default function RootLayout({ children }) {
                 <main className="w-11/12 mx-auto">
                     {children}
                 </main>
-                <footer className="py-2 w-11/12 mx-auto">
-                    <Footer />
-                </footer>
+                <Footer />
             </body>
         </html>
     );
