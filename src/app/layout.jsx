@@ -25,8 +25,14 @@ export const fontBangla = localFont({
 });
 
 export const metadata = {
-    title: "Hero Kidzz",
+    title: {
+        default: "Hero Kidz",
+        template: "%s | Hero Kidz",
+    },
     description: "By Mohammad Rashel",
+    icons: {
+        icon: "/assets/logo.png",
+    },
 };
 
 export default function RootLayout({ children }) {

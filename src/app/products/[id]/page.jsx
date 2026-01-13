@@ -75,7 +75,8 @@ const ProductDetails = async ({ params }) => {
                 {/* Actions */}
                 <button className="btn btn-primary btn-wide flex gap-2">
                     <FaCartPlus></FaCartPlus>
-                    Add to cart</button>
+                    Add to cart
+                </button>
                 {/* Key Features */}
                 <div className="mt-6">
                     <h3 className="font-semibold mb-2">Key Features</h3>

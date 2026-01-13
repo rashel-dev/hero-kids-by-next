@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { FaStar } from "react-icons/fa";
+import { FaCartPlus, FaStar } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
     const { title, image, price, ratings, reviews, sold, _id } = product;
@@ -28,7 +28,12 @@ const ProductCard = ({ product }) => {
                     <span className="font-bold text-lg">৳{price}</span>
                     <span className="text-sm text-gray-500">{sold} sold</span>
                 </div>
-                
+
+                <button className="btn btn-primary w-full flex gap-2">
+                    <FaCartPlus></FaCartPlus>
+                    Add to cart
+                </button>
+
                 <Link href={`/products/${_id}`} className="btn btn-primary btn-outline mt-4 w-full">
                     View Details
                 </Link>
