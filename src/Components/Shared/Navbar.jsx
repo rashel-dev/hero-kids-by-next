@@ -1,6 +1,8 @@
 import React from 'react';
 import Logo from '../ui/Logo';
 import NavLink from '../ui/NavLink';
+import Link from 'next/link';
+import { FiShoppingCart } from 'react-icons/fi';
 
 const Navbar = () => {
 
@@ -42,8 +44,9 @@ const Navbar = () => {
                     {navMenu}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Button</a>
+            <div className="navbar-end gap-4">
+                <FiShoppingCart size={24} className='cursor-pointer text-primary'/>
+                <Link href={"/login"} className="btn btn-primary btn-outline">Login</Link>
             </div>
         </div>
     );

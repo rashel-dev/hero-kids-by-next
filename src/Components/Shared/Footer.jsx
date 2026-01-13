@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="flex flex-col gap-6">
                         <Logo />
                         <p className="text-base opacity-70 leading-relaxed max-w-xs">
-                            Bringing joy and learning to every child's world. Discover our curated collection of toys that inspire imagination and growth.
+                            Bringing joy and learning to every child&apos;s world. Discover our curated collection of toys that inspire imagination and growth.
                         </p>
                         <div className="flex gap-3">
                             {[FaFacebookF, FaTwitter, FaInstagram, FaYoutube].map((Icon, index) => (
