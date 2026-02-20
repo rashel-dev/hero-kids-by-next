@@ -1,8 +1,9 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.0ocgkty.mongodb.net/?appName=Cluster0`;
 const dbName = process.env.DB_NAME;
-const collections = {
+export const collections = {
     PRODUCTS: "products",
+    USERS: "users",
 }
 
 const client = new MongoClient(uri, {
